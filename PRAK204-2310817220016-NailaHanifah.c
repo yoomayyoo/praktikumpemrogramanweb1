@@ -1,17 +1,14 @@
 #include <stdio.h>
 #include <math.h>
+#define phi 3.142857
 int main() {
-    double A, B, C, alas, tinggi, keliling, luas;
-    scanf("%1f", &A);
-    scanf("%1f", &B);
-    C = sqrt(B * B - A * A);
-    alas = C;
-    tinggi = A;
-    keliling = A + B + C;
-    luas = A * C * 0.5;
-    printf("Alas = %.0f cm\n", alas);
-    printf("Tinggi = %.0f cm\n", tinggi);
-    printf("Keliling = %.0f cm\n", keliling);
-    printf("Luas = %.0f cm^2\n", luas);
+    double r, t;
+    scanf("%lf %lf", &r, &t);
+    double volume = phi * pow(r, 2) * t;
+    double luas = 2 * phi * r * (r + t);
+    double keliling = 2 * phi * r;
+    printf("Volume = %.2lf\n", volume);
+    printf("Luas = %.2lf\n", luas);
+    printf("Keliling = %.2lf\n", keliling);
     return 0;
 }
