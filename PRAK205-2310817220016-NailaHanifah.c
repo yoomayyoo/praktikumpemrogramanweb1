@@ -2,8 +2,8 @@
 #include <math.h>
 int main() {
     double A, B, C, alas, tinggi, keliling, luas;
-    scanf("%1f", &A);
-    scanf("%1f", &B);
+    scanf("%lf", &A);
+    scanf("%lf", &B);
     C = sqrt(B * B - A * A);
     alas = C;
     tinggi = A;
